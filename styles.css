@@ -1,0 +1,56 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.dashboard-button {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: blue;
+}
+.dashboard-button a {
+    text-decoration: none;
+    color: blue;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+    transition: all 0.3s ease;
+}
+.dashboard-button a:hover {
+    background-color: black;
+    color: white;
+    transform: scale(1.1);
+}
+button {
+    color: blue;
+    font-size:15x;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+    transition: all 0.3s ease;
+}
+button:hover {
+    background-color: black;
+    color: white;
+    transform: scale(1.1);
+}
+label {
+    color: rgb(187, 12, 41);
+    font-size: 18px;
+}
+input {
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 9px;
+    transition: all 0.3s ease;
+    align-items: center;
+    justify-content: center;
+}
+h1 {
+    color: rgb(189, 48, 5);
+}
+h4,h2 {
+    color: rgb(13, 47, 241);
+}
