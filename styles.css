@@ -48,6 +48,14 @@ input {
     align-items: center;
     justify-content: center;
 }
+
+body {
+    background-image: url("https://www.thetakeout.com/1753839/grocery-store-vs-supermarket-difference/");
+    background-size: cover;
+    background-position: center;
+}
+
+
 h1 {
     color: rgb(189, 48, 5);
 }
