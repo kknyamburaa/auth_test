@@ -40,3 +40,31 @@ localStorage.setItem("currentuser", JSON.stringify({
 console.log("User saved:", newUser);
         alert("Signup successful!");
         
+const loginform = document.getElementById("login");
+
+if (loginform) {
+    loginform.addEventListener("submit", function(event) {
+        event.preventDefault();
+        console.log("Login form submitted");
+        
+        const email = document.getElementById("loginEmail").value;
+        const password = document.getElementById("loginPassword").value;
+        
+        const users = JSON.parse(localStorage.getItem("users")) || [];
+        const user = users.find(u => u.email === email && u.password === password);
+        
+        if (user) {
+            localStorage.setItem("currentuser", JSON.stringify({
+                fullname: user.fullname,
+                lastname: user.lastname,
+                email: user.email
+            }));
+            alert("Login successful!");
+            window.location.href = "dashboard.html";
+        } else {
+            alert("Invalid email or password");
+        }
+    });
+}
+
+// Signup link handling
