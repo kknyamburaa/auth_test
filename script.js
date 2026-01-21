@@ -14,7 +14,7 @@ const confirmPassword = document.getElementById("confirmPassword");
 const signupForm = document.getElementById("signupForm");
 const loginForm = document.getElementById("loginForm");
 
-if (password.value !== confirmPassword.value) {
+if (password !== confirmPassword) {
     alert("Passwords do not match");
     return;
 }
@@ -66,5 +66,3 @@ if (loginform) {
         }
     });
 }
-
-// Signup link handling
