@@ -6,11 +6,11 @@ document.getElementById("signup").addEventListener("click", function(event) {
     console.log("Form submitted");
 });
 
-const fullname = document.getElementById("fullname");
-const lastname = document.getElementById("lastname");
-const email = document.getElementById("email");
-const password = document.getElementById("password");
-const confirmPassword = document.getElementById("confirmPassword");
+const fullname = document.getElementById("fullname").value;
+const lastname = document.getElementById("lastname").value;
+const email = document.getElementById("email").value;
+const password = document.getElementById("password").value;
+const confirmPassword = document.getElementById("confirmPassword").value;
 const signupForm = document.getElementById("signupForm");
 const loginForm = document.getElementById("loginForm");
 
@@ -21,20 +21,20 @@ if (password !== confirmPassword) {
 const users = JSON.parse(localStorage.getItem("users")) || [];
         
 const newUser = {
-    fullname: fullname.value,
-    lastname: lastname.value,
-    email: email.value,
-    password: password.value
+    fullname: fullname,
+    lastname: lastname,
+    email: email,
+    password: password
 };
 users.push(newUser);
 console.log(users);
 
 localStorage.setItem("users", JSON.stringify(users));
 localStorage.setItem("currentuser", JSON.stringify({
-    fullname: fullname.value,
-    lastname: lastname.value,
-    email: email.value,
-    password: password.value
+    fullname: fullname,
+    lastname: lastname,
+    email: email,
+    password: password
 }));
 
 console.log("User saved:", newUser);

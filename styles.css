@@ -62,3 +62,13 @@ h1 {
 h4,h2 {
     color: rgb(13, 47, 241);
 }
+.login {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    gap: 50px;
+}
