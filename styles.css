@@ -119,7 +119,6 @@ header-container {
         100%;
        background-position:
         top right;
-        cover;
        background-repeat: 
         no-repeat;
       background-clip: border-box;
@@ -151,7 +150,4 @@ header-container {
 .category-item { 
  text-align: left;
  margin-left: 10px;
-
- 
- 
 }
