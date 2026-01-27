@@ -8,7 +8,7 @@
       color: blue;
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    gap: 5px;
     border-radius: 5px;
    border-image: linear-gradient(to right, red, purple) 1 1 1 1;
 }
@@ -72,7 +72,7 @@ h4,h2 {
 
 .login {
      display: flex;
-    min-height: 100vh;
+    min-height: 5vh;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -93,56 +93,65 @@ h4,h2 {
 }
 .signup {
     display: flex;
-    min-height: 100vh;
+    min-height: 30vh;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     border: 5px ;
     box-shadow: inset 0 1px 10px rgba(0, 0, 0, 0.3);
-    height: 60%;
+   
 }
 header-container {
     gap: 1px;
-    margin-left: 20px;
+    margin-left: 2px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
-    align-items: center;
     padding: 10px;
-    background-color: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
-    height: 40vh;
+    height: 100%;
     background-image:
-     url("https://www.beautycommunity.co.th/wp-content/uploads/2022/07/1-904x800.jpg");
+     url("https://www.beautycommunity.co.th/wp-content/uploads/2022/07/1-904x800.jpg"),
+     linear-gradient(to bottom, rgba(185, 197, 133, 0.1), #06c3e4d9);
        background-size:
-        35%;
+        25%, 
+        100%;
        background-position:
-        right;
+        top right;
+        cover;
        background-repeat: 
         no-repeat;
       background-clip: border-box;
-      background-color: chronic-gradient;
+
 }
 .header-content {
-   padding: 20px;
-  gap: 3px;
+ padding: 5px;
+  gap: 3px; 
   display: grid;
   grid-template-rows: 1.5cm;
 }
-content-container{
-gap: 1px;
-    margin-left: 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
-    height: 40vh;
-    columns: 5, 30px;
-    background-image: chronic-gradient;
+.flexbox-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: left;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  margin: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  height: auto;
+  overflow: hidden;
+  border: 1px solid black;
+  margin-bottom: 10px;
+  
+}
+.category-item { 
+ text-align: left;
+ margin-left: 10px;
 
+ 
+ 
 }
