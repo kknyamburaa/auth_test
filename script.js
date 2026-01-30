@@ -25,7 +25,8 @@ const user = {
     email: email,
     password: password
 };
-localStorage.setItem('email', email);
+localStorage.setItem('email', JSON.stringify(user));
+
 
 
 
