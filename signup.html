@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="script" href="script.js">
 </head>
 <body>
     <div class="container">
@@ -13,23 +12,23 @@
             <h2>Sign Up to Esther's empire</h2> <br>
                 <form id="signup">
                     <label for="firstname">  firstname:</label>
-                    <input type="text" placeholder="firstname" firstname required><br>
+                    <input type="text"id="firstname"placeholder="firstname" firstname required><br>
                     <br>
                     <label for="lastname">lastname:</label>
-                    <input type="text" placeholder="lastname" lastname required><br>
+                    <input type="text"id="lastname" placeholder="lastname" lastname required><br>
                     <br>
                     <label for="email"> email:</label>
-                    <input type="email" placeholder="you@gmail.com" email required><br>
+                    <input type="email"id="email" placeholder="you@gmail.com" email required><br>
                     <br>
                     <label for="password"> password:</label>
-                    <input type="password" placeholder="password" password required><br>
+                    <input type="password"id="password" placeholder="password" password required><br>
                     <br>
                     <label for="confirmpassword"> confirmpassword: </label>
-                    <input type="password" placeholder="confirmpassword" confirmpassword required><br>
+                    <input type="password"id="confirmpassword" placeholder="confirmpassword" confirmpassword required><br>
                     <br>
                     <label for="gender"> gender</label><br>
-                    <input type="radio" value ="male">male<br>
-                    <input type="radio" value ="female">female<br>
+                    <input type="radio" name="gender" value ="male">male<br>
+                    <input type="radio" name="gender" value ="female">female<br>
                     <br>
                     <button type="submit">Sign Up</button>
                     <button type="reset">Reset</button>
@@ -38,5 +37,6 @@
                 <p style="text-align: center;">  Already have an account? <span><a href="login.html">Login</a></span></p>
         </div>
     </div>
+    <script src="script.js"></script>
     </body>
 </html>
